@@ -8,7 +8,7 @@ let input = document.createElement("input");
 function init() {
     validateLogin();
     validatePassword();
-
+    console.log("Hello");
 }
 
 
