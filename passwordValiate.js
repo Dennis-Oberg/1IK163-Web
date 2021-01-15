@@ -1,6 +1,6 @@
 "use strict";
 
-let userName = ["Dennis", "Gustaf"];
+let userName = ["Zenun", "Patrik", "Fisnik"];
 let password = ["Admin123", "123", "asd"];
 let form = document.createElement("form");
 let input = document.createElement("input");
@@ -8,7 +8,6 @@ let input = document.createElement("input");
 function init() {
     validateLogin();
     validatePassword();
-    console.log("Hello");
 }
 
 
@@ -38,4 +37,10 @@ function validateLogin() {
         }
     }
 
+}
+
+function loginInfo() {
+
+    alert("Username: " + "\n" + "10 * 10 in letters" +
+        "\n" + "Password: " + "\n" + "20 * 20 in letters");
 }
