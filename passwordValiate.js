@@ -29,7 +29,6 @@ function validatePassword() {
 function validateLogin() {
     let formInput = input.value;
 
-
     for (var i = 0; i < userName.length; i++) {
         if (formInput == userName[i]) {
             return true;
