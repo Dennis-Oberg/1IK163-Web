@@ -1,97 +1,107 @@
-.headerImage
-{
-  width: 100%;
+.headerImage {
+    width: 100%;
 }
 
 .menuContainer {
-  background-color: rgb(48, 48, 48);
-  filter: drop-shadow(10px 10px 10px gray);
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  height: 50px;
+    background-color: rgb(48, 48, 48);
+    filter: drop-shadow(10px 10px 10px gray);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 50px;
 }
 
 div div {
-  max-width: 25%;
+    max-width: 25%;
 }
 
-.about, .contact, .start {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: gilroy;
-  font-size: 16px;
+.Dennis,
+.Gustaf,
+.start {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: gilroy;
+    font-size: 16px;
 }
 
-.current-item a
-{
-    color: rgb(102,169,156);
+.current-item a {
+    color: rgb(102, 169, 156);
 }
 
 nav div a:hover {
-  background-color: gray;
+    background-color: gray;
 }
 
 @font-face {
-  font-family: gilroy;
-  src: url(gilroy-light.otf);
+    font-family: gilroy;
+    src: url(gilroy-light.otf);
 }
 
-body
-{
-background-color: rgb(200, 200, 200);
+body {
+    background-color: rgb(200, 200, 200);
 }
+
 
 /* Bordered form */
+
 form {
-  width: 25%;
-  margin: 0 auto;
-  background-color: rgb(48,48,48);
-  color:white;
-  margin-top: 50px;
-  font-family: gilroy;
-  font-size: 16px;
+    width: 25%;
+    margin: 0 auto;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    margin-top: 50px;
+    font-family: gilroy;
+    font-size: 16px;
 }
+
 
 /* Full-width inputs */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  font-family: gilroy;
-  font-size: 16px;
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: gilroy;
+    font-size: 16px;
 }
+
 
 /* Set a style for all buttons */
+
 button {
-  background-color: rgb(102,169,146);
-  color: white;
-  padding: 15px 20px;
-  border: none;
-  cursor: pointer;
-  width: 50%;
-  margin: auto;
-  display: block;
-  font-family: gilroy;
-  font-size: 16px;
+    background-color: rgb(102, 169, 146);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin: auto;
+    display: block;
+    font-family: gilroy;
+    font-size: 16px;
 }
+
 
 /* Add a hover effect for buttons */
+
 button:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
+
 /* Add padding to containers */
+
 .container {
-  padding: 16px;
+    padding: 16px;
 }
 
 .logo {
-  width: 50%;
-  margin: auto;
-  display: block;
+    width: 50%;
+    margin: auto;
+    display: block;
 }
