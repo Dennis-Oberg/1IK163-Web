@@ -8,7 +8,41 @@ let pwinput = document.getElementById("pswd");
 
 function init() {
 
+}
 
+function verifyLength(input){
+    if(input.length < 8){
+        return false;
+    }
+    return true;
+}
+function verifyDigits(input){
+   let counter = 0;
+    for(var i = 0; i < input.length; i++){
+        if (parseInt(input.charAt(i)))
+        {
+          counter++;
+        }
+    }
+    console.log(counter);
+    return counter;
+
+}
+
+function verifyUpperCase(input){
+   let counter = 0;
+    for(var i = 0; i < input.length; i++)
+    {
+        if (!(parseInt(input.charAt(i))))
+        {
+          if (input.charAt(i) == input.charAt(i).toUpperCase())
+          {
+            counter++;
+          }
+      }
+    }
+    console.log(counter);
+    return counter;
 }
 
 function verifyLogin() {
@@ -16,18 +50,42 @@ function verifyLogin() {
     var pw = document.getElementById("pswd").value;
     var username = document.getElementById("uID").value;
 
-    if ((pw == "1") && (username == "1")) {
-        alert("Welcome!");
-        return true;
-    } else {
-        alert("See info!");
+    if (verifyLength(pw))
+    {
+      if (verifyDigits(pw) >= 2)
+      {
+          if (verifyUpperCase(pw) >= 2 )
+          {
+            if ((pw == "LNUväxjö123") && (username == "1"))
+            {
+              alert("Welcome!");
+              return true;
+            }
+            else {
+              alert("Wrong password and/or username!");
+              return false;
+            }
+          }
+          else {
+            alert("Not enough Uppercase characters!");
+            return false;
+          }
+      }
+      else {
+        alert("Not enough digits!");
+        return false;
+      }
+    }
+    else
+    {
+        alert("Too short!");
         return false;
     }
 }
 
 function loginInfo() {
     alert("Username: " + "\n" + "10 * 10 in letters" +
-        "\n" + "Password: " + "\n" + "20 * 20 in letters");
+        "\n" + "Password: " + "\n" + "= LNUväxjö123");
 }
 
 

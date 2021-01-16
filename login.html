@@ -4,11 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheetLogin.css">
+    <script src="passwordValiate.js"></script>
     <title>Login</title>
 </head>
 
 <body>
-
+    <div class="loginbox">
+        <form action="">
+            <p>Username</p>
+            <input type="text" name="" id="uID" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="" id="pswd" placeholder="Enter Password">
+            <input onclick="verifyLogin();" type="submit" name="" value="Login">
+            <button onclick="loginInfo();">Info</button>
+        </form>
+    </div>
 </body>
-
 </html>

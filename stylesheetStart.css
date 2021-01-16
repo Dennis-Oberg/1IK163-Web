@@ -41,3 +41,8 @@ nav div a:hover {
 body {
     background-color: rgb(200, 200, 200);
 }
+
+.container {
+  display: flex;
+
+}
