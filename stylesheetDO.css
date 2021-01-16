@@ -39,93 +39,23 @@ body {
     background-color: rgb(200, 200, 200);
 }
 
-.logo {
-    width: 50%;
-    margin: auto;
-    display: block;
-}
-
-textarea {
-    display: block;
-    border: 1px solid #BBB;
-    color: #444;
-    font-size: 110%;
-    font-family: gilroy;
-}
-
-.imgDivChild {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: gilroy;
-}
-
 .grid-container-Dennis {
     display: grid;
-    margin-top: 200px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     padding: 10px;
+    grid-gap: 20px;
 }
 
 .grid-item-Dennis {
-    text-align: center;
-    padding: 20px;
     border: 1px solid;
     font-size: 16px;
     font-family: gilroy;
+    color: white;
+    padding: 10px;
 }
 
 .interest-list {
     font: gilroy;
-}
-
-
-.headerImage {
-    width: 100%;
-}
-
-.menuContainer {
-    filter: drop-shadow(10px 10px 10px gray);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    background-image: url("skyline1.jpg");
-}
-
-.Dennis,
-.Gustaf,
-.start {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: gilroy;
-    font-size: 30px;
-}
-
-nav div a {
-    background-color: rgba(136, 175, 219, 0.651);
-}
-
-.current-item a {
-    background-color: rgb(20, 40, 56);
-}
-
-nav div a:hover {
-    background-color: rgb(66, 145, 209);
-}
-
-@font-face {
-    font-family: gilroy;
-    src: url(gilroy-light.otf);
-}
-
-body {
-    background-color: rgb(200, 200, 200);
-}
-
-.container {
-    color: rgb(102, 169, 146);
 }
 
 
@@ -148,18 +78,4 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 25px;
-}
-
-button:hover {
-    opacity: 0.8;
-}
-
-.container {
-    padding: 16px;
-}
-
-.logo {
-    width: 50%;
-    margin: auto;
-    display: block;
 }
