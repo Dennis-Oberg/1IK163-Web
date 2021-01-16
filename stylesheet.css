@@ -3,31 +3,34 @@
 }
 
 .menuContainer {
-    background-color: rgb(48, 48, 48);
     filter: drop-shadow(10px 10px 10px gray);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 200px;
-    background-image: url("background.jpg");
+    background-image: url("skyline1.jpg");
 }
 
 .Dennis,
 .Gustaf,
 .start {
-    color: black;
+    color: white;
     padding: 14px 16px;
     text-decoration: none;
     font-family: gilroy;
-    font-size: 16px;
+    font-size: 30px;
+}
+
+nav div a {
+    background-color: rgba(136, 175, 219, 0.651);
 }
 
 .current-item a {
-    color: rgb(102, 169, 156);
+    background-color: rgb(20, 40, 56);
 }
 
 nav div a:hover {
-    background-color: gray;
+    background-color: rgb(66, 145, 209);
 }
 
 @font-face {
@@ -97,11 +100,18 @@ button:hover {
     padding: 16px;
 }
 
-
 .logo {
     width: 50%;
     margin: auto;
     display: block;
+}
+
+textarea {
+    display: block;
+    border: 1px solid #BBB;
+    color: #444;
+    font-size: 110%;
+    font-family: gilroy;
 }
 
 
@@ -165,4 +175,23 @@ button:hover {
   align-items: center;
   justify-content: center;
   font-family: gilroy;
+}
+
+.grid-container-Dennis {
+    display: grid;
+    margin-top: 200px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-item-Dennis {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid;
+    font-size: 16px;
+    font-family: gilroy;
+}
+
+.interest-list {
+    font: gilroy;
 }
