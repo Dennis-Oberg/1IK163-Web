@@ -38,3 +38,43 @@ nav div a:hover {
 body {
     background-color: rgb(200, 200, 200);
 }
+
+.logo {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+textarea {
+    display: block;
+    border: 1px solid #BBB;
+    color: #444;
+    font-size: 110%;
+    font-family: gilroy;
+}
+
+.imgDivChild {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: gilroy;
+}
+
+.grid-container-Dennis {
+    display: grid;
+    margin-top: 200px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-item-Dennis {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid;
+    font-size: 16px;
+    font-family: gilroy;
+}
+
+.interest-list {
+    font: gilroy;
+}

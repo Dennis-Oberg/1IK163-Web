@@ -1,35 +1,31 @@
 "use strict";
 
 
-
-function init() {
+function init()
+{
     verifyLogin();
 }
 
 
+function verifyLogin()
+{
+    var pw = document.getElementById("pswd").value;
+    var username = document.getElementById("uID").value;
 
-
-
-
-function verifyLogin() {
-
-
-
-    var pw = document.getElementById("pswd");
-    var username = document.getElementById("uID");
-
-    if ((pw == "123") && (username == "123")) {
+    if ((pw == "123") && (username == "123"))
+    {
         alert("Welcome");
         return true;
-    } else {
+    }
+    else
+    {
         alert("Try again");
         return false;
     }
-
 }
 
 
-function loginInfo() {
-    alert("Username: " + "\n" + "10 * 10 in letters" +
-        "\n" + "Password: " + "\n" + "20 * 20 in letters");
+function loginInfo()
+{
+    alert("Username: " + "\n" + "10 * 10 in letters" + "\n" + "Password: " + "\n" + "20 * 20 in letters");
 }
