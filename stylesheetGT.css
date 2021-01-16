@@ -22,6 +22,7 @@
     background-color: rgba(136, 175, 219, 0.651);
 }
 
+
 .current-item a {
     background-color: rgb(20, 40, 56);
 }
@@ -47,11 +48,12 @@ body {
 
 .grid-container-gustaf {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 30% 30% 30%;
   padding:10px;
-  grid-gap: 20px;
-}
+  grid-gap: 60px;
+  justify-content: space-evenly;
 
+}
 
 .grid-item-gustaf {
   text-align: center;
@@ -61,7 +63,6 @@ body {
   font-family: gilroy;
   box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
   background-color: white;
-  display: flex;
 }
 
 .grid-item-gustaf table
