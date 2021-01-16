@@ -55,8 +55,9 @@ form {
     font-size: 16px;
 }
 
-
-/* Full-width inputs */
+.container {
+    color: rgb(102, 169, 146);
+}
 
 input[type=text],
 input[type=password] {
@@ -69,9 +70,6 @@ input[type=password] {
     font-family: gilroy;
     font-size: 16px;
 }
-
-
-/* Set a style for all buttons */
 
 button {
     background-color: rgb(102, 169, 146);
@@ -86,15 +84,30 @@ button {
     font-size: 16px;
 }
 
+.imgText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: gilroy;
+}
 
-/* Add a hover effect for buttons */
+.DennisImg {
+    border: 4px solid white;
+    box-shadow: 0 0px gray, 0px 0 gray;
+    width: 350px;
+    height: auto;
+}
+
+.imgDennis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
 
 button:hover {
     opacity: 0.8;
 }
-
-
-/* Add padding to containers */
 
 .container {
     padding: 16px;
@@ -114,74 +127,66 @@ textarea {
     font-family: gilroy;
 }
 
-
 .grid-container-gustaf {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding:10px;
-  grid-gap: 20px;
-  grid
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    grid-gap: 20px;
 }
-
 
 .grid-item-gustaf {
-  text-align: center;
-  padding:20px;
-  border: 1px solid white;
-  font-size:16px;
-  font-family: gilroy;
-  box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
-  background-color: white;
-  display: flex;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid white;
+    font-size: 16px;
+    font-family: gilroy;
+    box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+    background-color: white;
+    display: flex;
 }
 
-.grid-item-gustaf table
-{
-  padding:0 25px 0 0;
+.grid-item-gustaf table {
+    padding: 0 25px 0 0;
 }
 
-.grid-item-gustaf table tr
-{
-  text-align: left;
+.grid-item-gustaf table tr {
+    text-align: left;
 }
 
-.grid-item-gustaf ul
-{
-  list-style-type: none;
-  text-align: left;
+.grid-item-gustaf ul {
+    list-style-type: none;
+    text-align: left;
 }
 
-.grid-item-gustaf ul li:first-child
-{
-  font-weight: bold;
-  font-size: 20px;
+.grid-item-gustaf ul li:first-child {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .imgDivGustaf {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
 
-.imgGustaf
-{
+.imgGustaf {
     border: 4px solid white;
     box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
 }
 
 .imgDivChild {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: gilroy;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: gilroy;
 }
 
 .grid-container-Dennis {
     display: grid;
-    margin-top: 200px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     padding: 10px;
+    grid-gap: 20px;
 }
 
 .grid-item-Dennis {
@@ -190,6 +195,7 @@ textarea {
     border: 1px solid;
     font-size: 16px;
     font-family: gilroy;
+    color: white;
 }
 
 .interest-list {
