@@ -58,7 +58,7 @@ function verifyLogin() {
           {
             if ((pw == "LNUväxjö123") && (username == "1"))
             {
-              alert("Welcome!");
+
               return true;
             }
             else {
@@ -86,6 +86,10 @@ function verifyLogin() {
 function loginInfo() {
     alert("Username: " + "\n" + "10 * 10 in letters" +
         "\n" + "Password: " + "\n" + "= LNUväxjö123");
+}
+
+function move() {
+    document.location.href ="file:///C:/Users/gusta/github/1ik163-web/index.html";
 }
 
 
