@@ -39,10 +39,11 @@ nav div a:hover {
 }
 
 body {
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(68, 104, 75);
 }
 
 .container {
+
   display: flex;
 
 }
@@ -101,3 +102,7 @@ tbody {
   filter: drop-shadow(0 0px 10px black);
   border-radius: 20px;
 }
+
+    display: flex;
+}
+

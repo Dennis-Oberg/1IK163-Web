@@ -22,7 +22,6 @@
     background-color: rgba(136, 175, 219, 0.651);
 }
 
-
 .current-item a {
     background-color: rgb(20, 40, 56);
 }
@@ -37,7 +36,7 @@ nav div a:hover {
 }
 
 body {
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(68, 104, 75);
 }
 
 .logo { /*Trpr inte denna gör ngt*/
@@ -47,63 +46,57 @@ body {
 }
 
 .grid-container-gustaf {
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  padding:10px;
-  grid-gap: 60px;
-  justify-content: space-evenly;
-
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    padding: 10px;
+    grid-gap: 60px;
+    justify-content: space-evenly;
 }
 
 .grid-item-gustaf {
-  text-align: center;
-  padding:20px;
-  border: 1px solid white;
-  font-size:16px;
-  font-family: gilroy;
-  box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
-  background-color: white;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid white;
+    font-size: 16px;
+    font-family: gilroy;
+    box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+    background-color: white;
 }
 
-.grid-item-gustaf table
-{
-  padding:0 25px 0 0;
+.grid-item-gustaf table {
+    padding: 0 25px 0 0;
 }
 
-.grid-item-gustaf table tr
-{
-  text-align: left;
+.grid-item-gustaf table tr {
+    text-align: left;
 }
 
-.grid-item-gustaf ul
-{
-  list-style-type: none;
-  text-align: left;
-  padding: 0;
+.grid-item-gustaf ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
 }
 
-.grid-item-gustaf ul li:first-child
-{
-  font-weight: bold;
-  font-size: 20px;
+.grid-item-gustaf ul li:first-child {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .imgDivGustaf {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
 
-.imgGustaf
-{
+.imgGustaf {
     border: 4px solid white;
     box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
 }
 
 .imgDivChild {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: gilroy;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: gilroy;
 }
