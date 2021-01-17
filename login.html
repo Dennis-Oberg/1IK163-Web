@@ -6,22 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheetLogin.css">
     <script src="passwordValiate.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Login</title>
 </head>
 
+
 <body>
-  <div class="logincontainer">
-    <div class="loginbox">
-        <form action="">
-            <p>Username</p>
-            <input type="text" name="" id="uID" placeholder="Enter Username">
-            <p>Password</p>
-            <input type="password" name="" id="pswd" placeholder="Enter Password">
-            <input onclick="verifyLogin();" type="submit" name="" value="Login">
-            <button onclick="loginInfo();">Info</button>
-            <Button onclick="move();">salo</input>
-        </form>
+
+    <div class="circles" style="text-align: center;">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+
     </div>
-  </div>
+
+
+    <div class="logincontainer">
+        <div class="loginbox">
+            <form class="form-info" action="">
+                <p>Username</p>
+                <input type="text" name="" id="uID" placeholder="Enter Username">
+                <p>Password</p>
+                <input type="password" name="" id="pswd" placeholder="Enter Password">
+                <div class="buttons">
+                    <button class="btns" onclick="verifyLogin();" type="submit" value="Login">Login</button>
+                    <button class="btns" onclick="loginInfo();">Info</button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>
