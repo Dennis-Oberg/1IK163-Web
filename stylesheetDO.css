@@ -36,7 +36,7 @@ nav div a:hover {
 }
 
 body {
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(68, 104, 75);
 }
 
 .grid-container-Dennis {
@@ -47,17 +47,28 @@ body {
 }
 
 .grid-item-Dennis {
-    border: 1px solid;
-    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    border: 3px solid white;
+    font-size: 22px;
     font-family: gilroy;
-    color: white;
-    padding: 10px;
+    box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+    transition-duration: 0.3s;
+    background-color: rgba(148, 171, 190, 0.342);
+}
+
+.grid-item-Dennis:hover {
+    background-color: white;
+    border-radius: 18px;
 }
 
 .interest-list {
     font: gilroy;
 }
 
+.guitarPic {
+    opacity: 50%;
+}
 
 .imgText {
     display: flex;
@@ -71,6 +82,7 @@ body {
     box-shadow: 0 0px gray, 0px 0 gray;
     width: 350px;
     height: auto;
+    justify-content: center;
 }
 
 .imgDennis {

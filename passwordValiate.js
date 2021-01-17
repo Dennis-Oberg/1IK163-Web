@@ -4,6 +4,10 @@ let passwords = ["123", "asd", ""]
 let input = document.getElementById("uID");
 let pwinput = document.getElementById("pswd");
 
+const dot1 = document.getElementById("dot1");
+const dot2 = document.getElementById("dot2");
+const dot3 = document.getElementById("dot3");
+
 function init() {
 
 }
@@ -72,6 +76,11 @@ function verifyLogin() {
 function loginInfo() {
     alert("Username: " + "\n" + "10 * 10 in letters" +
         "\n" + "Password: " + "\n" + "= LNUväxjö123");
+}
+
+function moveDots() {
+    var scrollTo = (800, 600);
+    dot1.style.position(scrollX(scrollTo));
 }
 
 
