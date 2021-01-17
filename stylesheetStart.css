@@ -43,5 +43,66 @@ body {
 }
 
 .container {
+
+  display: flex;
+
+}
+
+.containerItem {
+  width:100%;
+}
+
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+}
+
+p {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  color:white;
+  font-family: gilroy;
+  font-size: 14px;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  border-spacing: 20px;
+}
+
+table tr
+{
+  font-family: gilroy;
+  font-size: 30px;
+}
+
+th, td
+{
+  border: 2px solid black;
+    border-radius: 25px;
+    padding: 15px;
+    border-left-color: rgb(0,100,225);
+    border-top-color: rgb(0,125,225);
+    border-right-color: rgb(0,150,225);
+    border-bottom-color: rgb(0,175,225);
+}
+
+th, td:hover {
+
+}
+
+tbody {
+  background-color: whitesmoke;
+  filter: drop-shadow(0 0px 10px black);
+  border-radius: 20px;
+}
+
     display: flex;
 }
+
