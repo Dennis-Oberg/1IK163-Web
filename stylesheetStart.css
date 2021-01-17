@@ -73,7 +73,6 @@ table {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  border-spacing: 20px;
 }
 
 table tr
@@ -82,27 +81,45 @@ table tr
   font-size: 30px;
 }
 
-th, td
-{
-  border: 2px solid black;
-    border-radius: 25px;
-    padding: 15px;
-    border-left-color: rgb(0,100,225);
-    border-top-color: rgb(0,125,225);
-    border-right-color: rgb(0,150,225);
-    border-bottom-color: rgb(0,175,225);
+th, td  {
+    padding: 20px;
+    transition: all 1s ease-out;
+    background-color: whitesmoke;
 }
 
-th, td:hover {
-
+th:hover, td:hover  {
+  transform:rotate3d(1, 1, 1, 360deg);
+  background: lightgray;
 }
 
 tbody {
-  background-color: whitesmoke;
-  filter: drop-shadow(0 0px 10px black);
-  border-radius: 20px;
+  --borderWidth: 1px;
+  position: relative;
+  padding:20px;
 }
 
-    display: flex;
+tbody:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+  border-radius: 25px;
 }
 
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

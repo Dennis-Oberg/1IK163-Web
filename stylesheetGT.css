@@ -35,10 +35,6 @@ nav div a:hover {
     src: url(gilroy-light.otf);
 }
 
-body {
-    background-color: rgb(68, 104, 75);
-}
-
 .logo { /*Trpr inte denna gör ngt*/
     width: 50%;
     margin: auto;
@@ -47,20 +43,19 @@ body {
 
 .grid-container-gustaf {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 25% 25% 25%;
     padding: 10px;
-    grid-gap: 60px;
+    grid-gap: 80px;
     justify-content: space-evenly;
 }
 
 .grid-item-gustaf {
-    text-align: center;
     padding: 20px;
-    border: 1px solid white;
     font-size: 16px;
     font-family: gilroy;
-    box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
     background-color: white;
+    transition: all 0.3s ease-out;
 }
 
 .grid-item-gustaf table {
@@ -82,6 +77,11 @@ body {
     font-size: 20px;
 }
 
+.grid-item-gustaf:hover {
+    transform: scale(1.15);
+    transition-duration: 0.3s;
+}
+
 .imgDivGustaf {
     display: flex;
     justify-content: center;
@@ -100,3 +100,48 @@ body {
     justify-content: center;
     font-family: gilroy;
 }
+
+#footer {
+    position: absolute;
+    width: 90%;
+  }
+  
+  .footerText {
+    position: absolute;
+    bottom:10px;
+    left: 16px;
+    color:white;
+    font-family: gilroy;
+    font-size: 14px;
+  }
+
+  body {
+    --borderWidth: 1px;
+    position: relative;
+    padding:20px;
+  }
+  
+  body:after{
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #B0E0E6, #87CEFA, #00BFFF, #1E90FF, #4682B4, #4169E1, #87CEEB, #3333FF);
+    z-index: -1;
+    animation: animatedgradient 20s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+  
+  @keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
