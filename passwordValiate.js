@@ -8,6 +8,8 @@ const dot1 = document.getElementById("dot1");
 const dot2 = document.getElementById("dot2");
 const dot3 = document.getElementById("dot3");
 
+
+
 function init() {
 
 }
@@ -50,27 +52,31 @@ function verifyLogin() {
     var username = document.getElementById("uID").value;
 
     if (verifyLength(pw)) {
+
         if (verifyDigits(pw) >= 2) {
             if (verifyUpperCase(pw) >= 2) {
+                document.getElementById("alert").innerHTML = "Välkommen!";
                 window.location.assign("index.html");
                 return true;
             } else {
-                alert("Not enough Uppercase characters!");
+                document.getElementById("alert").innerHTML = "Not enough Uppercase characters!";
+                //alert("Not enough Uppercase characters!");
                 return false;
             }
         } else {
-            alert("Not enough digits!");
+            document.getElementById("alert").innerHTML = "Not enough digits!";
             return false;
         }
     } else {
-        alert("Too short!");
+        document.getElementById("alert").innerHTML = "Not long enough!";
         return false;
     }
 }
 
 function loginInfo() {
-    alert("Username: " + "\n" + "10 * 10 in letters" +
-        "\n" + "Password: " + "\n" + "= LNUväxjö123");
+    document.getElementById("alert").innerHTML = "Username not required." + "\n" +
+        "Password must be atleast 8 characters long, have 2 uppercase letters and include 2 digits ";
+
 }
 
 
