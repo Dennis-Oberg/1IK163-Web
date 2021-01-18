@@ -78,17 +78,17 @@ function loginInfo() {
         "\n" + "Password: " + "\n" + "= LNUväxjö123");
 }
 
-function moveDots() {
-    var scrollTo = (800, 600);
-    dot1.style.position(scrollX(scrollTo));
-}
+
 
 
 
 function swapPage(inputURL) {
-    document.href(inputURL);
+    document.location.href(inputURL);
 }
 
+function validateLoginCred(pw) {
+    return (verifyLength(pw) && verifyDigits(pw) && verifyUpperCase(pw));
+}
 
 function validateUsername() {
     let userInput = input.value;

@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(68, 104, 75);
+    background-color: rgb(189, 221, 195);
     font-family: gilroy;
     background-position: center;
     min-height: 100vh;
@@ -23,6 +23,14 @@ body {
     color: #fff;
     padding: 50px;
     margin-top: 200px;
+    border-radius: 10px;
+    transition-duration: 0.6s;
+    box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+}
+
+.loginbox:hover {
+    border-radius: 50px;
+    transform: scale(1.15);
 }
 
 .buttons {
@@ -38,14 +46,42 @@ body {
 .dot {
     height: 45px;
     width: 45px;
-    background-color: #bbb;
+    background-color: rgba(67, 47, 122, 0.815);
     border-radius: 50%;
     display: inline-block;
     margin: 10px;
     position: relative;
     animation-name: example;
-    animation-duration: 4s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
+    opacity: 80%;
+}
+
+@keyframes example {
+    0% {
+        left: 0px;
+        top: 30px;
+    }
+    20% {
+        left: 750px;
+        top: 30px;
+    }
+    40% {
+        left: 750px;
+        top: 800px;
+    }
+    60% {
+        left: -750px;
+        top: 800px;
+    }
+    80% {
+        left: -750px;
+        top: 30px;
+    }
+    100% {
+        left: 0;
+        top: 30px;
+    }
 }
 
 .btns {
