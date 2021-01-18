@@ -101,15 +101,10 @@ nav div a:hover {
     font-family: gilroy;
 }
 
-#footer {
-    position: absolute;
-    width: 90%;
-  }
-  
   .footerText {
     position: absolute;
-    bottom:10px;
-    left: 16px;
+    bottom:30px;
+    left: 36px;
     color:white;
     font-family: gilroy;
     font-size: 14px;
@@ -121,7 +116,7 @@ nav div a:hover {
     padding:20px;
   }
   
-  body:after{
+  body:after  {
     content: '';
     position: absolute;
     top: calc(-1 * var(--borderWidth));

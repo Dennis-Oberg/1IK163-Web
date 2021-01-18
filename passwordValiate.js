@@ -52,13 +52,8 @@ function verifyLogin() {
     if (verifyLength(pw)) {
         if (verifyDigits(pw) >= 2) {
             if (verifyUpperCase(pw) >= 2) {
-                if ((pw == "LNUväxjö123") && (username == "100")) {
-                    alert("Welcome")
-                    return true;
-                } else {
-                    alert("Wrong password and/or username!");
-                    return false;
-                }
+                window.location.assign("index.html");
+                return true;
             } else {
                 alert("Not enough Uppercase characters!");
                 return false;
