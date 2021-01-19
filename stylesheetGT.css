@@ -3,7 +3,7 @@
 }
 
 .menuContainer {
-    filter: drop-shadow(10px 10px 10px gray);
+    filter: drop-shadow(10px 10px 10px black);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,7 +91,7 @@ nav div a:hover {
 
 .imgGustaf {
     border: 4px solid white;
-    box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
 }
 
 .imgDivChild {
