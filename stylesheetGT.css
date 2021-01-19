@@ -35,12 +35,6 @@ nav div a:hover {
     src: url(gilroy-light.otf);
 }
 
-.logo { /*Trpr inte denna gör ngt*/
-    width: 50%;
-    margin: auto;
-    display: block;
-}
-
 .grid-container-gustaf {
     display: grid;
     grid-template-columns: 25% 25% 25%;

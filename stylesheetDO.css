@@ -118,3 +118,12 @@ body {
           background-position: 0% 50%;
       }
   }
+
+  .footerText {
+    position: absolute;
+    bottom:30px;
+    left: 36px;
+    color:white;
+    font-family: gilroy;
+    font-size: 14px;
+  }
