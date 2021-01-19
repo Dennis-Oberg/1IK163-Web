@@ -1,0 +1,1 @@
+In this project there are 4 pages. The intention is that you enter "login.html" first. From there you can find all information you need for to be able to enter "index.html". 
