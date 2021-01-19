@@ -52,7 +52,6 @@ function verifyLogin() {
     var username = document.getElementById("uID").value;
 
     if (verifyLength(pw)) {
-
         if (verifyDigits(pw) >= 2) {
             if (verifyUpperCase(pw) >= 2) {
                 document.getElementById("alert").innerHTML = "Välkommen!";
@@ -60,7 +59,7 @@ function verifyLogin() {
                 return true;
             } else {
                 document.getElementById("alert").innerHTML = "Not enough Uppercase characters!";
-                //alert("Not enough Uppercase characters!");
+
                 return false;
             }
         } else {
@@ -68,7 +67,7 @@ function verifyLogin() {
             return false;
         }
     } else {
-        document.getElementById("alert").innerHTML = "Not long enough!";
+        document.getElementById("alert").innerHTML = "Password not long enough!";
         return false;
     }
 }
