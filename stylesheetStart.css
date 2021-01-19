@@ -39,7 +39,7 @@ nav div a:hover {
 }
 
 body {
-    background-color: rgb(68, 104, 75);
+    background-color: rgb(145, 218, 252);
 }
 
 .container {
@@ -73,6 +73,7 @@ table {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  border-spacing: 25px;
 }
 
 table tr
@@ -81,45 +82,32 @@ table tr
   font-size: 30px;
 }
 
-th, td  {
-    padding: 20px;
-    transition: all 1s ease-out;
-    background-color: whitesmoke;
-}
-
 th:hover, td:hover  {
-  transform:rotate3d(1, 1, 1, 360deg);
   background: lightgray;
 }
 
-tbody {
-  --borderWidth: 1px;
-  position: relative;
+
+th, td {
+  cursor: pointer;
+  transform: perspective(1px) translateZ(0);
+  background-color: whitesmoke;
   padding:20px;
 }
 
-tbody:after {
-  content: '';
+td:before, th:before {
+  content: "";
   position: absolute;
-  top: calc(-1 * var(--borderWidth));
-  left: calc(-1 * var(--borderWidth));
-  height: calc(100% + var(--borderWidth) * 2);
-  width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
   z-index: -1;
-  animation: animatedgradient 3s ease alternate infinite;
-  background-size: 300% 300%;
-  border-radius: 25px;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #2098D1;
+  height: 4px;
+  transition-property: left, right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
 }
-
-@keyframes animatedgradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+td:hover:before, td:focus:before, td:active:before, th:hover:before, th:focus:before, th:active:before {
+  left: 0;
+  right: 0;
 }
